@@ -2,4 +2,4 @@ from sampleapp import myapp
 
 @myapp.route('/')
 def helloworld():
-    return 'Hello Spencer!'
+    return 'Hello World!'
