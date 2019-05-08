@@ -1,24 +1,23 @@
-tags:
-    - shell
-    - panxa
-
 stages:
   - dev
   - test
   - deploy
 
 dev:
-    stage: dev
-    script:
-        - oc start-build service1-develop -n dummy
+  tags:
+    - shell
+    - panxa
+  stage: dev
+  script:
+    - oc start-build service1-develop -n dummy
 
 test:
-    stage: test
-    script:
-        - oc start-build service1-test -n dummy
+  stage: test
+  script:
+    - oc start-build service1-test -n dummy
 
 prod:
-    stage: prod
-    script:
-        - oc start-build service1-test -n dummy
+  stage: prod
+  script:
+    - oc start-build service1-test -n dummy
 
