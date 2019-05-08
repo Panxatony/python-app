@@ -19,5 +19,5 @@ test:
 prod:
   stage: prod
   script:
-    - oc start-build service1-test -n dummy
+    - oc start-build service1-prod -n dummy
 
